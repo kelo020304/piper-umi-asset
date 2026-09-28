@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.8)
+project(piper_umi_description)
+find_package(ament_cmake REQUIRED)
+install(FILES piper_umi.urdf model_info.json display.launch.py view.rviz README.md THIRD_PARTY_NOTICES.md AGILEX_LICENSE.txt PIPER_ROS_LICENSE.txt source_manifest.json camera_alignment.json DESTINATION share/${PROJECT_NAME})
+install(DIRECTORY meshes DESTINATION share/${PROJECT_NAME})
+ament_package()

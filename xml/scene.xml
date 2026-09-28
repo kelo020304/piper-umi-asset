@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="piper_umi_scene">
+  <include file="piper_umi.xml" />
+  <visual>
+    <global azimuth="135" elevation="-25" offwidth="1280" offheight="960" />
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0" />
+  </visual>
+  <statistic center="0 0 0.2" extent="0.8" />
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1=".3 .5 .7" rgb2="0 0 0" width="512" height="3072" />
+    <texture name="blue_checker" type="2d" builtin="checker" mark="edge" rgb1=".2 .3 .4" rgb2=".1 .2 .3" markrgb=".8 .8 .8" width="256" height="256" />
+    <material name="blue_floor" texture="blue_checker" texuniform="true" texrepeat="5 5" reflectance=".05" />
+  </asset>
+  <worldbody>
+    <light pos="1 -1 2" dir="-1 1 -2" diffuse=".8 .8 .8" />
+    <geom name="floor" type="plane" size="0 0 .05" pos="0 0 -.002" material="blue_floor" />
+  </worldbody>
+</mujoco>

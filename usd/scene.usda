@@ -1,0 +1,102 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def Xform "PiperUMI" (
+        prepend references = @piper_umi.usd@
+    )
+    {
+    }
+
+    def PhysicsScene "PhysicsScene"
+    {
+        vector3f physics:gravityDirection = (0, 0, -1)
+        float physics:gravityMagnitude = 9.81
+    }
+
+    def DomeLight "Light"
+    {
+        color3f inputs:color = (1, 1, 1)
+        float inputs:intensity = 300
+    }
+
+    def DistantLight "KeyLight"
+    {
+        float inputs:angle = 2
+        float inputs:intensity = 1000
+        float3 xformOp:rotateXYZ = (-30, -35, 20)
+        uniform token[] xformOpOrder = ["xformOp:rotateXYZ"]
+    }
+
+    def DistantLight "FillLight"
+    {
+        float inputs:angle = 12
+        float inputs:intensity = 700
+        matrix4d xformOp:transform = ( (0.7071067811865476, 0.7071067811865476, 0, 0), (-0.49292178644304296, 0.49292178644304296, 0.7169771439171536, -0), (0.5069794004195824, -0.5069794004195824, 0.6970966755769258, 0), (0.8, -0.8, 1.2, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+
+    def Mesh "Floor" (
+        prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+    )
+    {
+        int[] faceVertexCounts = [4]
+        int[] faceVertexIndices = [0, 1, 2, 3]
+        rel material:binding = </World/Looks/BlueChecker>
+        point3f[] points = [(-10, -10, -0.002), (10, -10, -0.002), (10, 10, -0.002), (-10, 10, -0.002)]
+        texCoord2f[] primvars:st = [(0, 0), (100, 0), (100, 100), (0, 100)] (
+            interpolation = "vertex"
+        )
+        uniform token subdivisionScheme = "none"
+    }
+
+    def "Looks"
+    {
+        def Material "BlueChecker"
+        {
+            token outputs:surface.connect = </World/Looks/BlueChecker/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Looks/BlueChecker/Texture.outputs:rgb>
+                float inputs:roughness = 0.85
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @textures/blue_checker.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Looks/BlueChecker/UV.outputs:result>
+                token inputs:wrapS = "repeat"
+                token inputs:wrapT = "repeat"
+                float3 outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Camera "PreviewCamera"
+    {
+        float2 clippingRange = (0.01, 100)
+        float focalLength = 40
+        float horizontalAperture = 36
+        matrix4d xformOp:transform = ( (0.7071067811865475, 0.7071067811865475, 0, 0), (-0.2574888312707668, 0.2574888312707668, 0.9313425811921353, -0), (0.6585586547687416, -0.6585586547687416, 0.36414419734271597, 0), (0.8499999999999999, -0.8499999999999999, 0.65, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

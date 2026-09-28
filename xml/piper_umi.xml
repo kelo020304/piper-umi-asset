@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="piper_umi">
+  <compiler angle="radian" autolimits="true" inertiafromgeom="false" fusestatic="false" />
+  <option timestep="0.002" integrator="implicitfast" gravity="0 0 -9.81" iterations="100" />
+  <default>
+    <joint damping="1" armature="0.01" />
+    <geom friction="0.8 0.005 0.0001" solref="0.008 1" solimp="0.95 0.99 0.001" />
+  </default>
+  <asset>
+    <mesh name="meshes_collision_base_0" file="meshes/collision/base_0.stl" />
+    <mesh name="meshes_collision_base_1" file="meshes/collision/base_1.stl" />
+    <mesh name="meshes_collision_base_2" file="meshes/collision/base_2.stl" />
+    <mesh name="meshes_collision_base_3" file="meshes/collision/base_3.stl" />
+    <mesh name="meshes_collision_base_4" file="meshes/collision/base_4.stl" />
+    <mesh name="meshes_collision_shoulder_0" file="meshes/collision/shoulder_0.stl" />
+    <mesh name="meshes_collision_shoulder_1" file="meshes/collision/shoulder_1.stl" />
+    <mesh name="meshes_collision_upper_arm_0" file="meshes/collision/upper_arm_0.stl" />
+    <mesh name="meshes_collision_upper_arm_1" file="meshes/collision/upper_arm_1.stl" />
+    <mesh name="meshes_collision_upper_arm_2" file="meshes/collision/upper_arm_2.stl" />
+    <mesh name="meshes_collision_upper_arm_3" file="meshes/collision/upper_arm_3.stl" />
+    <mesh name="meshes_collision_upper_arm_4" file="meshes/collision/upper_arm_4.stl" />
+    <mesh name="meshes_collision_upper_arm_5" file="meshes/collision/upper_arm_5.stl" />
+    <mesh name="meshes_collision_upper_arm_6" file="meshes/collision/upper_arm_6.stl" />
+    <mesh name="meshes_collision_forearm_0" file="meshes/collision/forearm_0.stl" />
+    <mesh name="meshes_collision_forearm_1" file="meshes/collision/forearm_1.stl" />
+    <mesh name="meshes_collision_forearm_2" file="meshes/collision/forearm_2.stl" />
+    <mesh name="meshes_collision_forearm_3" file="meshes/collision/forearm_3.stl" />
+    <mesh name="meshes_collision_forearm_4" file="meshes/collision/forearm_4.stl" />
+    <mesh name="meshes_collision_forearm_5" file="meshes/collision/forearm_5.stl" />
+    <mesh name="meshes_collision_forearm_6" file="meshes/collision/forearm_6.stl" />
+    <mesh name="meshes_collision_forearm_7" file="meshes/collision/forearm_7.stl" />
+    <mesh name="meshes_collision_forearm_8" file="meshes/collision/forearm_8.stl" />
+    <mesh name="meshes_collision_forearm_9" file="meshes/collision/forearm_9.stl" />
+    <mesh name="meshes_collision_forearm_10" file="meshes/collision/forearm_10.stl" />
+    <mesh name="meshes_collision_forearm_11" file="meshes/collision/forearm_11.stl" />
+    <mesh name="meshes_collision_forearm_12" file="meshes/collision/forearm_12.stl" />
+    <mesh name="meshes_collision_forearm_13" file="meshes/collision/forearm_13.stl" />
+    <mesh name="meshes_collision_forearm_14" file="meshes/collision/forearm_14.stl" />
+    <mesh name="meshes_collision_wrist_roll_0" file="meshes/collision/wrist_roll_0.stl" />
+    <mesh name="meshes_collision_wrist_roll_1" file="meshes/collision/wrist_roll_1.stl" />
+    <mesh name="meshes_collision_wrist_roll_2" file="meshes/collision/wrist_roll_2.stl" />
+    <mesh name="meshes_collision_wrist_roll_3" file="meshes/collision/wrist_roll_3.stl" />
+    <mesh name="meshes_collision_wrist_roll_4" file="meshes/collision/wrist_roll_4.stl" />
+    <mesh name="meshes_collision_wrist_housing_0" file="meshes/collision/wrist_housing_0.stl" />
+    <mesh name="meshes_collision_wrist_connector_0" file="meshes/collision/wrist_connector_0.stl" />
+    <mesh name="meshes_visual_gripper_drive_rail" file="meshes/visual/gripper_drive_rail.stl" />
+    <mesh name="meshes_collision_gripper_drive_rail_0" file="meshes/collision/gripper_drive_rail_0.stl" />
+    <mesh name="meshes_collision_gripper_drive_rail_1" file="meshes/collision/gripper_drive_rail_1.stl" />
+    <mesh name="meshes_collision_gripper_drive_rail_2" file="meshes/collision/gripper_drive_rail_2.stl" />
+    <mesh name="meshes_collision_gripper_drive_rail_3" file="meshes/collision/gripper_drive_rail_3.stl" />
+    <mesh name="meshes_visual_camera_base" file="meshes/visual/camera_base.stl" />
+    <mesh name="meshes_collision_camera_base_0" file="meshes/collision/camera_base_0.stl" />
+    <mesh name="meshes_visual_left_slider" file="meshes/visual/left_slider.stl" />
+    <mesh name="meshes_collision_left_slider_0" file="meshes/collision/left_slider_0.stl" />
+    <mesh name="meshes_visual_right_slider" file="meshes/visual/right_slider.stl" />
+    <mesh name="meshes_collision_right_slider_0" file="meshes/collision/right_slider_0.stl" />
+    <mesh name="meshes_visual_left_support" file="meshes/visual/left_support.stl" />
+    <mesh name="meshes_collision_left_support_0" file="meshes/collision/left_support_0.stl" />
+    <mesh name="meshes_visual_left_soft_finger" file="meshes/visual/left_soft_finger.stl" />
+    <mesh name="meshes_collision_left_soft_finger_0" file="meshes/collision/left_soft_finger_0.stl" />
+    <mesh name="meshes_visual_right_support" file="meshes/visual/right_support.stl" />
+    <mesh name="meshes_collision_right_support_0" file="meshes/collision/right_support_0.stl" />
+    <mesh name="meshes_visual_right_soft_finger" file="meshes/visual/right_soft_finger.stl" />
+    <mesh name="meshes_collision_right_soft_finger_0" file="meshes/collision/right_soft_finger_0.stl" />
+    <mesh name="meshes_visual_base_link_2.obj" file="meshes/visual/base_link_2.obj" />
+    <mesh name="meshes_visual_base_link_3.obj" file="meshes/visual/base_link_3.obj" />
+    <mesh name="meshes_visual_link1_rot_0.obj" file="meshes/visual/link1_rot_0.obj" />
+    <mesh name="meshes_visual_link2_rot_0.obj" file="meshes/visual/link2_rot_0.obj" />
+    <mesh name="meshes_visual_link2_rot_1.obj" file="meshes/visual/link2_rot_1.obj" />
+    <mesh name="meshes_visual_link2_rot_10.obj" file="meshes/visual/link2_rot_10.obj" />
+    <mesh name="meshes_visual_link2_rot_11.obj" file="meshes/visual/link2_rot_11.obj" />
+    <mesh name="meshes_visual_link2_rot_12.obj" file="meshes/visual/link2_rot_12.obj" />
+    <mesh name="meshes_visual_link2_rot_13.obj" file="meshes/visual/link2_rot_13.obj" />
+    <mesh name="meshes_visual_link2_rot_14.obj" file="meshes/visual/link2_rot_14.obj" />
+    <mesh name="meshes_visual_link2_rot_15.obj" file="meshes/visual/link2_rot_15.obj" />
+    <mesh name="meshes_visual_link2_rot_16.obj" file="meshes/visual/link2_rot_16.obj" />
+    <mesh name="meshes_visual_link2_rot_17.obj" file="meshes/visual/link2_rot_17.obj" />
+    <mesh name="meshes_visual_link2_rot_18.obj" file="meshes/visual/link2_rot_18.obj" />
+    <mesh name="meshes_visual_link2_rot_19.obj" file="meshes/visual/link2_rot_19.obj" />
+    <mesh name="meshes_visual_link2_rot_2.obj" file="meshes/visual/link2_rot_2.obj" />
+    <mesh name="meshes_visual_link2_rot_20.obj" file="meshes/visual/link2_rot_20.obj" />
+    <mesh name="meshes_visual_link2_rot_21.obj" file="meshes/visual/link2_rot_21.obj" />
+    <mesh name="meshes_visual_link2_rot_22.obj" file="meshes/visual/link2_rot_22.obj" />
+    <mesh name="meshes_visual_link2_rot_23.obj" file="meshes/visual/link2_rot_23.obj" />
+    <mesh name="meshes_visual_link2_rot_24.obj" file="meshes/visual/link2_rot_24.obj" />
+    <mesh name="meshes_visual_link2_rot_25.obj" file="meshes/visual/link2_rot_25.obj" />
+    <mesh name="meshes_visual_link2_rot_26.obj" file="meshes/visual/link2_rot_26.obj" />
+    <mesh name="meshes_visual_link2_rot_27.obj" file="meshes/visual/link2_rot_27.obj" />
+    <mesh name="meshes_visual_link2_rot_28.obj" file="meshes/visual/link2_rot_28.obj" />
+    <mesh name="meshes_visual_link2_rot_29.obj" file="meshes/visual/link2_rot_29.obj" />
+    <mesh name="meshes_visual_link2_rot_3.obj" file="meshes/visual/link2_rot_3.obj" />
+    <mesh name="meshes_visual_link2_rot_30.obj" file="meshes/visual/link2_rot_30.obj" />
+    <mesh name="meshes_visual_link2_rot_31.obj" file="meshes/visual/link2_rot_31.obj" />
+    <mesh name="meshes_visual_link2_rot_4.obj" file="meshes/visual/link2_rot_4.obj" />
+    <mesh name="meshes_visual_link2_rot_5.obj" file="meshes/visual/link2_rot_5.obj" />
+    <mesh name="meshes_visual_link2_rot_6.obj" file="meshes/visual/link2_rot_6.obj" />
+    <mesh name="meshes_visual_link2_rot_7.obj" file="meshes/visual/link2_rot_7.obj" />
+    <mesh name="meshes_visual_link2_rot_8.obj" file="meshes/visual/link2_rot_8.obj" />
+    <mesh name="meshes_visual_link2_rot_9.obj" file="meshes/visual/link2_rot_9.obj" />
+    <mesh name="meshes_visual_link3_rot_0.obj" file="meshes/visual/link3_rot_0.obj" />
+    <mesh name="meshes_visual_link3_rot_1.obj" file="meshes/visual/link3_rot_1.obj" />
+    <mesh name="meshes_visual_link3_rot_10.obj" file="meshes/visual/link3_rot_10.obj" />
+    <mesh name="meshes_visual_link3_rot_11.obj" file="meshes/visual/link3_rot_11.obj" />
+    <mesh name="meshes_visual_link3_rot_12.obj" file="meshes/visual/link3_rot_12.obj" />
+    <mesh name="meshes_visual_link3_rot_13.obj" file="meshes/visual/link3_rot_13.obj" />
+    <mesh name="meshes_visual_link3_rot_14.obj" file="meshes/visual/link3_rot_14.obj" />
+    <mesh name="meshes_visual_link3_rot_15.obj" file="meshes/visual/link3_rot_15.obj" />
+    <mesh name="meshes_visual_link3_rot_16.obj" file="meshes/visual/link3_rot_16.obj" />
+    <mesh name="meshes_visual_link3_rot_17.obj" file="meshes/visual/link3_rot_17.obj" />
+    <mesh name="meshes_visual_link3_rot_18.obj" file="meshes/visual/link3_rot_18.obj" />
+    <mesh name="meshes_visual_link3_rot_19.obj" file="meshes/visual/link3_rot_19.obj" />
+    <mesh name="meshes_visual_link3_rot_2.obj" file="meshes/visual/link3_rot_2.obj" />
+    <mesh name="meshes_visual_link3_rot_20.obj" file="meshes/visual/link3_rot_20.obj" />
+    <mesh name="meshes_visual_link3_rot_21.obj" file="meshes/visual/link3_rot_21.obj" />
+    <mesh name="meshes_visual_link3_rot_22.obj" file="meshes/visual/link3_rot_22.obj" />
+    <mesh name="meshes_visual_link3_rot_23.obj" file="meshes/visual/link3_rot_23.obj" />
+    <mesh name="meshes_visual_link3_rot_24.obj" file="meshes/visual/link3_rot_24.obj" />
+    <mesh name="meshes_visual_link3_rot_25.obj" file="meshes/visual/link3_rot_25.obj" />
+    <mesh name="meshes_visual_link3_rot_26.obj" file="meshes/visual/link3_rot_26.obj" />
+    <mesh name="meshes_visual_link3_rot_27.obj" file="meshes/visual/link3_rot_27.obj" />
+    <mesh name="meshes_visual_link3_rot_28.obj" file="meshes/visual/link3_rot_28.obj" />
+    <mesh name="meshes_visual_link3_rot_3.obj" file="meshes/visual/link3_rot_3.obj" />
+    <mesh name="meshes_visual_link3_rot_4.obj" file="meshes/visual/link3_rot_4.obj" />
+    <mesh name="meshes_visual_link3_rot_5.obj" file="meshes/visual/link3_rot_5.obj" />
+    <mesh name="meshes_visual_link3_rot_6.obj" file="meshes/visual/link3_rot_6.obj" />
+    <mesh name="meshes_visual_link3_rot_7.obj" file="meshes/visual/link3_rot_7.obj" />
+    <mesh name="meshes_visual_link3_rot_8.obj" file="meshes/visual/link3_rot_8.obj" />
+    <mesh name="meshes_visual_link3_rot_9.obj" file="meshes/visual/link3_rot_9.obj" />
+    <mesh name="meshes_visual_link4_rot_0.obj" file="meshes/visual/link4_rot_0.obj" />
+    <mesh name="meshes_visual_link4_rot_1.obj" file="meshes/visual/link4_rot_1.obj" />
+    <mesh name="meshes_visual_link4_rot_2.obj" file="meshes/visual/link4_rot_2.obj" />
+    <mesh name="meshes_visual_link4_rot_3.obj" file="meshes/visual/link4_rot_3.obj" />
+    <mesh name="meshes_visual_link4_rot_4.obj" file="meshes/visual/link4_rot_4.obj" />
+    <mesh name="meshes_visual_link5_rot_0.obj" file="meshes/visual/link5_rot_0.obj" />
+    <mesh name="meshes_visual_link5_rot_1.obj" file="meshes/visual/link5_rot_1.obj" />
+    <mesh name="meshes_visual_link5_rot_2.obj" file="meshes/visual/link5_rot_2.obj" />
+    <mesh name="meshes_visual_link5_rot_3.obj" file="meshes/visual/link5_rot_3.obj" />
+    <mesh name="meshes_visual_link5_rot_4.obj" file="meshes/visual/link5_rot_4.obj" />
+    <mesh name="meshes_visual_link5_rot_5.obj" file="meshes/visual/link5_rot_5.obj" />
+    <mesh name="meshes_visual_link5_rot_6.obj" file="meshes/visual/link5_rot_6.obj" />
+    <mesh name="meshes_visual_native_link6" file="meshes/visual/native_link6.stl" />
+    <mesh name="meshes_collision_native_link6" file="meshes/collision/native_link6.stl" />
+    <mesh name="meshes_visual_native_flange" file="meshes/visual/native_flange.stl" />
+    <mesh name="meshes_collision_native_flange" file="meshes/collision/native_flange.stl" />
+  </asset>
+  <worldbody>
+    <body name="base_link" pos="0 0 0" quat="1 0 0 0">
+      <inertial mass="1.02" pos="-0.004736411642 2.568291346e-05 0.04145151804" fullinertia="0.00267433 0.00282612 0.00089624 -7.3e-07 -0.00017389 4e-07" />
+      <geom name="base_link_visual_0" type="mesh" mesh="meshes_visual_base_link_2.obj" rgba="0.980392 0.980392 0.980392 1" contype="0" conaffinity="0" group="2" mass="0" />
+      <geom name="base_link_visual_1" type="mesh" mesh="meshes_visual_base_link_3.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+      <geom name="base_link_collision_0" type="mesh" mesh="meshes_collision_base_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+      <geom name="base_link_collision_1" type="mesh" mesh="meshes_collision_base_1" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+      <geom name="base_link_collision_2" type="mesh" mesh="meshes_collision_base_2" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+      <geom name="base_link_collision_3" type="mesh" mesh="meshes_collision_base_3" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+      <geom name="base_link_collision_4" type="mesh" mesh="meshes_collision_base_4" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+      <body name="link1" pos="0 0 0.123" quat="1 0 0 0">
+        <inertial mass="0.71" pos="0.00032 -0.00041 -0.00348" fullinertia="0.00050027 0.00040879 0.00045802 7.8e-07 6.26e-06 4.62e-06" />
+        <joint name="joint1" type="hinge" axis="0 0 1" range="-2.6179938 2.6179938" damping="1" armature="0.01" />
+        <geom name="link1_visual_0" type="mesh" mesh="meshes_visual_link1_rot_0.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+        <geom name="link1_collision_0" type="mesh" mesh="meshes_collision_shoulder_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+        <geom name="link1_collision_1" type="mesh" mesh="meshes_collision_shoulder_1" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+        <body name="link2" pos="0 0 0" quat="-0.04797095758 0.04797092106 0.7054776945 0.7054777108">
+          <inertial mass="1.16" pos="0.21852 -0.00861 0.00126" fullinertia="0.00111915 0.06763251 0.067559 0.00182916 0.00019233 7.67e-06" />
+          <joint name="joint2" type="hinge" axis="0 0 1" range="0 3.1415926" damping="1" armature="0.01" />
+          <geom name="link2_visual_0" type="mesh" mesh="meshes_visual_link2_rot_0.obj" rgba="0.086275 0.086275 0.086275 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_1" type="mesh" mesh="meshes_visual_link2_rot_1.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_2" type="mesh" mesh="meshes_visual_link2_rot_10.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_3" type="mesh" mesh="meshes_visual_link2_rot_11.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_4" type="mesh" mesh="meshes_visual_link2_rot_12.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_5" type="mesh" mesh="meshes_visual_link2_rot_13.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_6" type="mesh" mesh="meshes_visual_link2_rot_14.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_7" type="mesh" mesh="meshes_visual_link2_rot_15.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_8" type="mesh" mesh="meshes_visual_link2_rot_16.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_9" type="mesh" mesh="meshes_visual_link2_rot_17.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_10" type="mesh" mesh="meshes_visual_link2_rot_18.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_11" type="mesh" mesh="meshes_visual_link2_rot_19.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_12" type="mesh" mesh="meshes_visual_link2_rot_2.obj" rgba="0.086275 0.086275 0.086275 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_13" type="mesh" mesh="meshes_visual_link2_rot_20.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_14" type="mesh" mesh="meshes_visual_link2_rot_21.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_15" type="mesh" mesh="meshes_visual_link2_rot_22.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_16" type="mesh" mesh="meshes_visual_link2_rot_23.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_17" type="mesh" mesh="meshes_visual_link2_rot_24.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_18" type="mesh" mesh="meshes_visual_link2_rot_25.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_19" type="mesh" mesh="meshes_visual_link2_rot_26.obj" rgba="0.980392 0.980392 0.980392 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_20" type="mesh" mesh="meshes_visual_link2_rot_27.obj" rgba="0.141176 0.141176 0.141176 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_21" type="mesh" mesh="meshes_visual_link2_rot_28.obj" rgba="0.141176 0.141176 0.141176 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_22" type="mesh" mesh="meshes_visual_link2_rot_29.obj" rgba="0.141176 0.141176 0.141176 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_23" type="mesh" mesh="meshes_visual_link2_rot_3.obj" rgba="0.086275 0.086275 0.086275 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_24" type="mesh" mesh="meshes_visual_link2_rot_30.obj" rgba="0.141176 0.141176 0.141176 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_25" type="mesh" mesh="meshes_visual_link2_rot_31.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_26" type="mesh" mesh="meshes_visual_link2_rot_4.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_27" type="mesh" mesh="meshes_visual_link2_rot_5.obj" rgba="0.086275 0.086275 0.086275 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_28" type="mesh" mesh="meshes_visual_link2_rot_6.obj" rgba="0.501961 0.501961 0.501961 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_29" type="mesh" mesh="meshes_visual_link2_rot_7.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_30" type="mesh" mesh="meshes_visual_link2_rot_8.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_visual_31" type="mesh" mesh="meshes_visual_link2_rot_9.obj" rgba="0.501961 0.501961 0.501961 1" contype="0" conaffinity="0" group="2" mass="0" />
+          <geom name="link2_collision_0" type="mesh" mesh="meshes_collision_upper_arm_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+          <geom name="link2_collision_1" type="mesh" mesh="meshes_collision_upper_arm_1" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+          <geom name="link2_collision_2" type="mesh" mesh="meshes_collision_upper_arm_2" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+          <geom name="link2_collision_3" type="mesh" mesh="meshes_collision_upper_arm_3" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+          <geom name="link2_collision_4" type="mesh" mesh="meshes_collision_upper_arm_4" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+          <geom name="link2_collision_5" type="mesh" mesh="meshes_collision_upper_arm_5" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+          <geom name="link2_collision_6" type="mesh" mesh="meshes_collision_upper_arm_6" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+          <body name="link3" pos="0.28503 0 0" quat="-0.6240159903 0 0 0.7814115714">
+            <inertial mass="0.5" pos="-0.01999 -0.14808 -0.00053" fullinertia="0.01347608 0.00046377 0.01363321 0.00161034 6.6e-07 1.62e-06" />
+            <joint name="joint3" type="hinge" axis="0 0 1" range="-2.9670597 0" damping="1" armature="0.01" />
+            <geom name="link3_visual_0" type="mesh" mesh="meshes_visual_link3_rot_0.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_1" type="mesh" mesh="meshes_visual_link3_rot_1.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_2" type="mesh" mesh="meshes_visual_link3_rot_10.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_3" type="mesh" mesh="meshes_visual_link3_rot_11.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_4" type="mesh" mesh="meshes_visual_link3_rot_12.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_5" type="mesh" mesh="meshes_visual_link3_rot_13.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_6" type="mesh" mesh="meshes_visual_link3_rot_14.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_7" type="mesh" mesh="meshes_visual_link3_rot_15.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_8" type="mesh" mesh="meshes_visual_link3_rot_16.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_9" type="mesh" mesh="meshes_visual_link3_rot_17.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_10" type="mesh" mesh="meshes_visual_link3_rot_18.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_11" type="mesh" mesh="meshes_visual_link3_rot_19.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_12" type="mesh" mesh="meshes_visual_link3_rot_2.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_13" type="mesh" mesh="meshes_visual_link3_rot_20.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_14" type="mesh" mesh="meshes_visual_link3_rot_21.obj" rgba="0.141176 0.141176 0.141176 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_15" type="mesh" mesh="meshes_visual_link3_rot_22.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_16" type="mesh" mesh="meshes_visual_link3_rot_23.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_17" type="mesh" mesh="meshes_visual_link3_rot_24.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_18" type="mesh" mesh="meshes_visual_link3_rot_25.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_19" type="mesh" mesh="meshes_visual_link3_rot_26.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_20" type="mesh" mesh="meshes_visual_link3_rot_27.obj" rgba="0.815686 0.14902 0.14902 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_21" type="mesh" mesh="meshes_visual_link3_rot_28.obj" rgba="0.141176 0.141176 0.141176 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_22" type="mesh" mesh="meshes_visual_link3_rot_3.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_23" type="mesh" mesh="meshes_visual_link3_rot_4.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_24" type="mesh" mesh="meshes_visual_link3_rot_5.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_25" type="mesh" mesh="meshes_visual_link3_rot_6.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_26" type="mesh" mesh="meshes_visual_link3_rot_7.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_27" type="mesh" mesh="meshes_visual_link3_rot_8.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_visual_28" type="mesh" mesh="meshes_visual_link3_rot_9.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+            <geom name="link3_collision_0" type="mesh" mesh="meshes_collision_forearm_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_1" type="mesh" mesh="meshes_collision_forearm_1" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_2" type="mesh" mesh="meshes_collision_forearm_2" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_3" type="mesh" mesh="meshes_collision_forearm_3" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_4" type="mesh" mesh="meshes_collision_forearm_4" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_5" type="mesh" mesh="meshes_collision_forearm_5" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_6" type="mesh" mesh="meshes_collision_forearm_6" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_7" type="mesh" mesh="meshes_collision_forearm_7" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_8" type="mesh" mesh="meshes_collision_forearm_8" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_9" type="mesh" mesh="meshes_collision_forearm_9" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_10" type="mesh" mesh="meshes_collision_forearm_10" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_11" type="mesh" mesh="meshes_collision_forearm_11" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_12" type="mesh" mesh="meshes_collision_forearm_12" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_13" type="mesh" mesh="meshes_collision_forearm_13" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <geom name="link3_collision_14" type="mesh" mesh="meshes_collision_forearm_14" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+            <body name="link4" pos="-0.02198 -0.25075 0" quat="0.7071067907 0.7071067717 0 0">
+              <inertial mass="0.38" pos="0.00013 -0.00076 -0.00394" fullinertia="0.00017844 0.00018914 0.00014613 6.2e-07 6.7e-07 4.08e-06" />
+              <joint name="joint4" type="hinge" axis="0 0 1" range="-1.7453292 1.7453292" damping="1" armature="0.01" />
+              <geom name="link4_visual_0" type="mesh" mesh="meshes_visual_link4_rot_0.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+              <geom name="link4_visual_1" type="mesh" mesh="meshes_visual_link4_rot_1.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+              <geom name="link4_visual_2" type="mesh" mesh="meshes_visual_link4_rot_2.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+              <geom name="link4_visual_3" type="mesh" mesh="meshes_visual_link4_rot_3.obj" rgba="0.141176 0.141176 0.141176 1" contype="0" conaffinity="0" group="2" mass="0" />
+              <geom name="link4_visual_4" type="mesh" mesh="meshes_visual_link4_rot_4.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+              <geom name="link4_collision_0" type="mesh" mesh="meshes_collision_wrist_roll_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+              <geom name="link4_collision_1" type="mesh" mesh="meshes_collision_wrist_roll_1" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+              <geom name="link4_collision_2" type="mesh" mesh="meshes_collision_wrist_roll_2" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+              <geom name="link4_collision_3" type="mesh" mesh="meshes_collision_wrist_roll_3" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+              <geom name="link4_collision_4" type="mesh" mesh="meshes_collision_wrist_roll_4" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+              <body name="link5" pos="0 0 0" quat="0.7071067907 -0.7071067717 0 0">
+                <inertial mass="0.383" pos="0.00018 -0.06104 -0.00227" fullinertia="0.00172318 0.00017936 0.00171172 2.59e-06 1e-07 9.9e-06" />
+                <joint name="joint5" type="hinge" axis="0 0 1" range="-1.2217304 1.2217304" damping="1" armature="0.01" />
+                <geom name="link5_visual_0" type="mesh" mesh="meshes_visual_link5_rot_0.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+                <geom name="link5_visual_1" type="mesh" mesh="meshes_visual_link5_rot_1.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+                <geom name="link5_visual_2" type="mesh" mesh="meshes_visual_link5_rot_2.obj" rgba="0.980392 0.980392 0.980392 1" contype="0" conaffinity="0" group="2" mass="0" />
+                <geom name="link5_visual_3" type="mesh" mesh="meshes_visual_link5_rot_3.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+                <geom name="link5_visual_4" type="mesh" mesh="meshes_visual_link5_rot_4.obj" rgba="0.141176 0.141176 0.141176 1" contype="0" conaffinity="0" group="2" mass="0" />
+                <geom name="link5_visual_5" type="mesh" mesh="meshes_visual_link5_rot_5.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+                <geom name="link5_visual_6" type="mesh" mesh="meshes_visual_link5_rot_6.obj" rgba="0.588235 0.588235 0.588235 1" contype="0" conaffinity="0" group="2" mass="0" />
+                <geom name="link5_collision_0" type="mesh" mesh="meshes_collision_wrist_housing_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                <geom name="link5_collision_1" type="mesh" mesh="meshes_collision_wrist_connector_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                <body name="link6" pos="8.8259e-05 -0.091 0" quat="0.7071067907 0.7071067717 0 0">
+                  <inertial mass="0.007" pos="-3e-05 6e-05 -0.002" fullinertia="0.00152112 0.00138626 0.00031152 2.02e-06 2.61e-06 2e-08" />
+                  <joint name="joint6" type="hinge" axis="0 0 1" range="-2.0943951 2.0943951" damping="1" armature="0.01" />
+                  <geom name="link6_visual_0" type="mesh" mesh="meshes_visual_native_link6" rgba="0.117647 0.117647 0.117647 1" contype="0" conaffinity="0" group="2" mass="0" />
+                  <geom name="link6_collision_0" type="mesh" mesh="meshes_collision_native_link6" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                  <body name="flange_link" pos="0 0 0" quat="1 0 0 0">
+                    <inertial mass="0.04" pos="0.001151691 0.000782428 0.004798051" fullinertia="9.935389e-06 1.0508003e-05 1.9652873e-05 0 0 0" />
+                    <geom name="flange_link_visual_0" type="mesh" mesh="meshes_visual_native_flange" rgba="0.117647 0.117647 0.117647 1" contype="0" conaffinity="0" group="2" mass="0" />
+                    <geom name="flange_link_collision_0" type="mesh" mesh="meshes_collision_native_flange" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                    <body name="gripper_base" pos="0 0 0.0045" quat="1 0 0 0">
+                      <inertial mass="0.4588358918" pos="-0.001118149401 -0.0002144134098 0.0361662741" fullinertia="0.0004644702768 0.0002186464268 0.0004599027677 -3.62827661e-06 6.652088253e-06 1.406656174e-06" />
+                      <geom name="gripper_base_visual_0" type="mesh" mesh="meshes_visual_gripper_drive_rail" rgba="0.784314 0.784314 0.784314 1" contype="0" conaffinity="0" group="2" mass="0" />
+                      <geom name="gripper_base_visual_1" type="mesh" mesh="meshes_visual_camera_base" rgba="0.22 0.29 0.34 1" contype="0" conaffinity="0" group="2" mass="0" />
+                      <geom name="gripper_base_collision_0" type="mesh" mesh="meshes_collision_gripper_drive_rail_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                      <geom name="gripper_base_collision_1" type="mesh" mesh="meshes_collision_gripper_drive_rail_1" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                      <geom name="gripper_base_collision_2" type="mesh" mesh="meshes_collision_gripper_drive_rail_2" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                      <geom name="gripper_base_collision_3" type="mesh" mesh="meshes_collision_gripper_drive_rail_3" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                      <geom name="gripper_base_collision_4" type="mesh" mesh="meshes_collision_camera_base_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                      <body name="left_finger" pos="-7.59782988e-07 0.01110582498 0.06474132919" quat="1 0 -3.469446952e-18 -1.447566072e-24">
+                        <inertial mass="0.126226226" pos="-6.082722576e-05 0.009878009092 0.04070252584" fullinertia="0.0001650242106 0.0001622431216 3.276748824e-05 7.445846947e-09 3.600864351e-07 5.400750985e-06" />
+                        <joint name="gripper_left_joint" type="slide" axis="3.080201034e-08 1 7.425335096e-08" range="0 0.05" damping="2" armature="0.002" />
+                        <geom name="left_finger_visual_0" type="mesh" mesh="meshes_visual_left_slider" rgba="0.37 0.4 0.44 1" contype="0" conaffinity="0" group="2" mass="0" />
+                        <geom name="left_finger_visual_1" type="mesh" mesh="meshes_visual_left_support" rgba="0.95 0.95 0.95 1" contype="0" conaffinity="0" group="2" mass="0" />
+                        <geom name="left_finger_visual_2" type="mesh" mesh="meshes_visual_left_soft_finger" rgba="1 0.67 0.3 1" contype="0" conaffinity="0" group="2" mass="0" />
+                        <geom name="left_finger_collision_0" type="mesh" mesh="meshes_collision_left_slider_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                        <geom name="left_finger_collision_1" type="mesh" mesh="meshes_collision_left_support_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                        <geom name="left_finger_collision_2" type="mesh" mesh="meshes_collision_left_soft_finger_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                      </body>
+                      <body name="right_finger" pos="-7.604821936e-07 -0.01159417502 0.06474132751" quat="1 0 -3.469446952e-18 -1.447566072e-24">
+                        <inertial mass="0.126226226" pos="6.000330044e-05 -0.009878161636 0.04070252437" fullinertia="0.0001650238397 0.0001622431589 3.27671515e-05 1.036348188e-08 -3.723458781e-07 -5.401468935e-06" />
+                        <joint name="gripper_right_joint" type="slide" axis="-3.080201034e-08 -1 -7.425335096e-08" range="0 0.05" damping="2" armature="0.002" />
+                        <geom name="right_finger_visual_0" type="mesh" mesh="meshes_visual_right_slider" rgba="0.37 0.4 0.44 1" contype="0" conaffinity="0" group="2" mass="0" />
+                        <geom name="right_finger_visual_1" type="mesh" mesh="meshes_visual_right_support" rgba="0.95 0.95 0.95 1" contype="0" conaffinity="0" group="2" mass="0" />
+                        <geom name="right_finger_visual_2" type="mesh" mesh="meshes_visual_right_soft_finger" rgba="1 0.67 0.3 1" contype="0" conaffinity="0" group="2" mass="0" />
+                        <geom name="right_finger_collision_0" type="mesh" mesh="meshes_collision_right_slider_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                        <geom name="right_finger_collision_1" type="mesh" mesh="meshes_collision_right_support_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                        <geom name="right_finger_collision_2" type="mesh" mesh="meshes_collision_right_soft_finger_0" rgba="0.5 0.8 0.5 0.3" group="3" mass="0" />
+                      </body>
+                      <site name="tool0" pos="-2.159046872e-09 -0.0002441860048 0.2126398554" quat="1 0 -3.469446952e-18 -1.447566072e-24" size="0.006" rgba="1 0.3 0.1 1" />
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <equality>
+    <joint name="parallel_gripper" joint1="gripper_right_joint" joint2="gripper_left_joint" polycoef="0 1 0 0 0" solref="0.004 1" solimp="0.99 0.999 0.0001" />
+  </equality>
+  <contact>
+    <exclude body1="base_link" body2="link1" />
+    <exclude body1="link1" body2="link2" />
+    <exclude body1="link2" body2="link3" />
+    <exclude body1="link3" body2="link4" />
+    <exclude body1="link4" body2="link5" />
+    <exclude body1="link5" body2="link6" />
+    <exclude body1="link6" body2="flange_link" />
+    <exclude body1="flange_link" body2="gripper_base" />
+    <exclude body1="gripper_base" body2="left_finger" />
+    <exclude body1="gripper_base" body2="right_finger" />
+    <exclude body1="link5" body2="flange_link" />
+    <exclude body1="link5" body2="gripper_base" />
+    <exclude body1="link6" body2="gripper_base" />
+    <exclude body1="link6" body2="left_finger" />
+    <exclude body1="link6" body2="right_finger" />
+    <exclude body1="flange_link" body2="left_finger" />
+    <exclude body1="flange_link" body2="right_finger" />
+  </contact>
+  <actuator>
+    <position name="joint1_position" joint="joint1" kp="1200" kv="70" ctrllimited="true" ctrlrange="-2.6179938 2.6179938" forcelimited="true" forcerange="-100 100" />
+    <position name="joint2_position" joint="joint2" kp="1200" kv="70" ctrllimited="true" ctrlrange="0 3.1415926" forcelimited="true" forcerange="-100 100" />
+    <position name="joint3_position" joint="joint3" kp="1200" kv="70" ctrllimited="true" ctrlrange="-2.9670597 0" forcelimited="true" forcerange="-100 100" />
+    <position name="joint4_position" joint="joint4" kp="1200" kv="70" ctrllimited="true" ctrlrange="-1.7453292 1.7453292" forcelimited="true" forcerange="-100 100" />
+    <position name="joint5_position" joint="joint5" kp="1200" kv="70" ctrllimited="true" ctrlrange="-1.2217304 1.2217304" forcelimited="true" forcerange="-100 100" />
+    <position name="joint6_position" joint="joint6" kp="1200" kv="70" ctrllimited="true" ctrlrange="-2.0943951 2.0943951" forcelimited="true" forcerange="-100 100" />
+    <position name="gripper_left_joint_position" joint="gripper_left_joint" kp="1500" kv="30" ctrllimited="true" ctrlrange="0 0.05" forcelimited="true" forcerange="-10 10" />
+  </actuator>
+  <keyframe>
+    <key name="cad_assembly" qpos="0 0.0004211567802 -0.0004776209271 0 5.109191073e-05 0 0.02996880426 0.02996880426" ctrl="0 0.0004211567802 -0.0004776209271 0 5.109191073e-05 0 0.02996880426" />
+    <key name="closed" qpos="0 0 0 0 0 0 0 0" ctrl="0 0 0 0 0 0 0" />
+  </keyframe>
+</mujoco>

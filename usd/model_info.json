@@ -1,0 +1,1086 @@
+{
+  "robot": "piper_umi",
+  "cad_qpos": [
+    0.0,
+    0.0004211567801626379,
+    -0.00047762092712426516,
+    0.0,
+    5.1091910728925484e-05,
+    0.0,
+    0.029968804264068602,
+    0.029968804264068602
+  ],
+  "cad_ctrl": [
+    0.0,
+    0.0004211567801626379,
+    -0.00047762092712426516,
+    0.0,
+    5.1091910728925484e-05,
+    0.0,
+    0.029968804264068602
+  ],
+  "gripper": {
+    "coordinate": "single-finger outward travel in metres; opposite axes, equal coordinates",
+    "range_per_finger_m": [
+      0,
+      0.05
+    ],
+    "nominal_total_stroke_m": 0.1,
+    "minimum_slider_clearance_m": 0.0002,
+    "cad_q_per_finger_m": 0.029968804264068602,
+    "minimum_projected_inner_finger_gap_m": 0.002882192802429198,
+    "maximum_projected_inner_finger_gap_m": 0.1028821928024292,
+    "note": "Minimum is CAD-derived conservative slider spacing; 100 mm stroke is nominal. Not a measured hardware calibration. Soft fingers modeled as rigid."
+  },
+  "mount_revision": {
+    "native_flange": "AgileX flange.stl",
+    "removed_cad_component": "UMI-PIPER-CAMERA-MOUNT",
+    "original_drive_origin_in_link6_m": [
+      -8.715347740843177e-05,
+      -3.482337671733421e-06,
+      0.0014874070214083712
+    ],
+    "new_drive_origin_in_link6_m": [
+      0,
+      0,
+      0.0045
+    ],
+    "eef_translation_in_link6_m": [
+      8.715347740843177e-05,
+      3.482337671733421e-06,
+      0.0030125929785916284
+    ],
+    "retained_rail_length_m": 0.155
+  },
+  "appearance_inventory": [
+    {
+      "source": "base_link_2.obj",
+      "source_material": "a0000000-0000-0000-0000-000000000000_004-material",
+      "rgba": [
+        0.980392,
+        0.980392,
+        0.980392,
+        1.0
+      ],
+      "link": "base_link",
+      "visual_mesh": "meshes/visual/base_link_2.obj",
+      "triangles": 168
+    },
+    {
+      "source": "base_link_3.obj",
+      "source_material": "Material-塑胶_024-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "base_link",
+      "visual_mesh": "meshes/visual/base_link_3.obj",
+      "triangles": 10532
+    },
+    {
+      "source": "link1_rot_0.obj",
+      "source_material": "Material-塑胶_025-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link1",
+      "visual_mesh": "meshes/visual/link1_rot_0.obj",
+      "triangles": 18760
+    },
+    {
+      "source": "link2_rot_0.obj",
+      "source_material": "Material-塑胶__2__003-material",
+      "rgba": [
+        0.086275,
+        0.086275,
+        0.086275,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_0.obj",
+      "triangles": 88
+    },
+    {
+      "source": "link2_rot_1.obj",
+      "source_material": "Material-塑胶__3__023-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_1.obj",
+      "triangles": 160
+    },
+    {
+      "source": "link2_rot_10.obj",
+      "source_material": "Material-塑胶__3__019-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_10.obj",
+      "triangles": 292
+    },
+    {
+      "source": "link2_rot_11.obj",
+      "source_material": "Material-塑胶__3__018-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_11.obj",
+      "triangles": 208
+    },
+    {
+      "source": "link2_rot_12.obj",
+      "source_material": "Material-塑胶__3__017-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_12.obj",
+      "triangles": 156
+    },
+    {
+      "source": "link2_rot_13.obj",
+      "source_material": "Material-塑胶__3__016-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_13.obj",
+      "triangles": 196
+    },
+    {
+      "source": "link2_rot_14.obj",
+      "source_material": "Material-塑胶__3__015-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_14.obj",
+      "triangles": 344
+    },
+    {
+      "source": "link2_rot_15.obj",
+      "source_material": "Material-塑胶__3__014-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_15.obj",
+      "triangles": 196
+    },
+    {
+      "source": "link2_rot_16.obj",
+      "source_material": "Material-塑胶__3__013-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_16.obj",
+      "triangles": 364
+    },
+    {
+      "source": "link2_rot_17.obj",
+      "source_material": "Material-塑胶__3__012-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_17.obj",
+      "triangles": 196
+    },
+    {
+      "source": "link2_rot_18.obj",
+      "source_material": "Material-塑胶__3__011-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_18.obj",
+      "triangles": 340
+    },
+    {
+      "source": "link2_rot_19.obj",
+      "source_material": "Material-塑胶__3__010-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_19.obj",
+      "triangles": 360
+    },
+    {
+      "source": "link2_rot_2.obj",
+      "source_material": "Material-塑胶__2__002-material",
+      "rgba": [
+        0.086275,
+        0.086275,
+        0.086275,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_2.obj",
+      "triangles": 88
+    },
+    {
+      "source": "link2_rot_20.obj",
+      "source_material": "Material-塑胶__3__009-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_20.obj",
+      "triangles": 196
+    },
+    {
+      "source": "link2_rot_21.obj",
+      "source_material": "Material-塑胶__3__008-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_21.obj",
+      "triangles": 340
+    },
+    {
+      "source": "link2_rot_22.obj",
+      "source_material": "Material-塑胶__3__007-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_22.obj",
+      "triangles": 344
+    },
+    {
+      "source": "link2_rot_23.obj",
+      "source_material": "Material-塑胶__3__006-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_23.obj",
+      "triangles": 376
+    },
+    {
+      "source": "link2_rot_24.obj",
+      "source_material": "Material-塑胶__3__005-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_24.obj",
+      "triangles": 192
+    },
+    {
+      "source": "link2_rot_25.obj",
+      "source_material": "Material-塑胶__3__004-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_25.obj",
+      "triangles": 196
+    },
+    {
+      "source": "link2_rot_26.obj",
+      "source_material": "a0000000-0000-0000-0000-000000000000-material",
+      "rgba": [
+        0.980392,
+        0.980392,
+        0.980392,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_26.obj",
+      "triangles": 27814
+    },
+    {
+      "source": "link2_rot_27.obj",
+      "source_material": "Material-塑胶_053-material",
+      "rgba": [
+        0.141176,
+        0.141176,
+        0.141176,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_27.obj",
+      "triangles": 2139
+    },
+    {
+      "source": "link2_rot_28.obj",
+      "source_material": "Material-塑胶_052-material",
+      "rgba": [
+        0.141176,
+        0.141176,
+        0.141176,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_28.obj",
+      "triangles": 2135
+    },
+    {
+      "source": "link2_rot_29.obj",
+      "source_material": "Material-塑胶_051-material",
+      "rgba": [
+        0.141176,
+        0.141176,
+        0.141176,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_29.obj",
+      "triangles": 1313
+    },
+    {
+      "source": "link2_rot_3.obj",
+      "source_material": "Material-塑胶__2__001-material",
+      "rgba": [
+        0.086275,
+        0.086275,
+        0.086275,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_3.obj",
+      "triangles": 160
+    },
+    {
+      "source": "link2_rot_30.obj",
+      "source_material": "Material-塑胶_050-material",
+      "rgba": [
+        0.141176,
+        0.141176,
+        0.141176,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_30.obj",
+      "triangles": 1317
+    },
+    {
+      "source": "link2_rot_31.obj",
+      "source_material": "Material-塑胶__1__004-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_31.obj",
+      "triangles": 30842
+    },
+    {
+      "source": "link2_rot_4.obj",
+      "source_material": "Material-塑胶__3__022-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_4.obj",
+      "triangles": 376
+    },
+    {
+      "source": "link2_rot_5.obj",
+      "source_material": "Material-塑胶__2_-material",
+      "rgba": [
+        0.086275,
+        0.086275,
+        0.086275,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_5.obj",
+      "triangles": 160
+    },
+    {
+      "source": "link2_rot_6.obj",
+      "source_material": "Material-塑胶__4__001-material",
+      "rgba": [
+        0.501961,
+        0.501961,
+        0.501961,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_6.obj",
+      "triangles": 260
+    },
+    {
+      "source": "link2_rot_7.obj",
+      "source_material": "Material-塑胶__3__021-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_7.obj",
+      "triangles": 300
+    },
+    {
+      "source": "link2_rot_8.obj",
+      "source_material": "Material-塑胶__3__020-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_8.obj",
+      "triangles": 208
+    },
+    {
+      "source": "link2_rot_9.obj",
+      "source_material": "Material-塑胶__4_-material",
+      "rgba": [
+        0.501961,
+        0.501961,
+        0.501961,
+        1.0
+      ],
+      "link": "link2",
+      "visual_mesh": "meshes/visual/link2_rot_9.obj",
+      "triangles": 260
+    },
+    {
+      "source": "link3_rot_0.obj",
+      "source_material": "Material-塑胶_078-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_0.obj",
+      "triangles": 2956
+    },
+    {
+      "source": "link3_rot_1.obj",
+      "source_material": "Material-塑胶_077-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_1.obj",
+      "triangles": 3806
+    },
+    {
+      "source": "link3_rot_10.obj",
+      "source_material": "Material-塑胶_068-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_10.obj",
+      "triangles": 2918
+    },
+    {
+      "source": "link3_rot_11.obj",
+      "source_material": "Material-塑胶_067-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_11.obj",
+      "triangles": 1994
+    },
+    {
+      "source": "link3_rot_12.obj",
+      "source_material": "Material-塑胶_066-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_12.obj",
+      "triangles": 2114
+    },
+    {
+      "source": "link3_rot_13.obj",
+      "source_material": "Material-塑胶_065-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_13.obj",
+      "triangles": 2108
+    },
+    {
+      "source": "link3_rot_14.obj",
+      "source_material": "Material-塑胶_064-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_14.obj",
+      "triangles": 21402
+    },
+    {
+      "source": "link3_rot_15.obj",
+      "source_material": "Material-塑胶_063-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_15.obj",
+      "triangles": 114
+    },
+    {
+      "source": "link3_rot_16.obj",
+      "source_material": "Material-塑胶_062-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_16.obj",
+      "triangles": 99
+    },
+    {
+      "source": "link3_rot_17.obj",
+      "source_material": "Material-塑胶_061-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_17.obj",
+      "triangles": 83
+    },
+    {
+      "source": "link3_rot_18.obj",
+      "source_material": "Material-塑胶_060-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_18.obj",
+      "triangles": 49
+    },
+    {
+      "source": "link3_rot_19.obj",
+      "source_material": "Material-塑胶__3__025-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_19.obj",
+      "triangles": 17
+    },
+    {
+      "source": "link3_rot_2.obj",
+      "source_material": "Material-塑胶_076-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_2.obj",
+      "triangles": 224
+    },
+    {
+      "source": "link3_rot_20.obj",
+      "source_material": "Material-塑胶_059-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_20.obj",
+      "triangles": 74
+    },
+    {
+      "source": "link3_rot_21.obj",
+      "source_material": "Material-塑胶__1__006-material",
+      "rgba": [
+        0.141176,
+        0.141176,
+        0.141176,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_21.obj",
+      "triangles": 1470
+    },
+    {
+      "source": "link3_rot_22.obj",
+      "source_material": "Material-塑胶_058-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_22.obj",
+      "triangles": 75
+    },
+    {
+      "source": "link3_rot_23.obj",
+      "source_material": "Material-塑胶_057-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_23.obj",
+      "triangles": 115
+    },
+    {
+      "source": "link3_rot_24.obj",
+      "source_material": "Material-塑胶_056-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_24.obj",
+      "triangles": 99
+    },
+    {
+      "source": "link3_rot_25.obj",
+      "source_material": "Material-塑胶_055-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_25.obj",
+      "triangles": 84
+    },
+    {
+      "source": "link3_rot_26.obj",
+      "source_material": "Material-塑胶_054-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_26.obj",
+      "triangles": 51
+    },
+    {
+      "source": "link3_rot_27.obj",
+      "source_material": "Material-塑胶__3__024-material",
+      "rgba": [
+        0.815686,
+        0.14902,
+        0.14902,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_27.obj",
+      "triangles": 17
+    },
+    {
+      "source": "link3_rot_28.obj",
+      "source_material": "Material-塑胶__1__005-material",
+      "rgba": [
+        0.141176,
+        0.141176,
+        0.141176,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_28.obj",
+      "triangles": 1489
+    },
+    {
+      "source": "link3_rot_3.obj",
+      "source_material": "Material-塑胶_075-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_3.obj",
+      "triangles": 224
+    },
+    {
+      "source": "link3_rot_4.obj",
+      "source_material": "Material-塑胶_074-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_4.obj",
+      "triangles": 224
+    },
+    {
+      "source": "link3_rot_5.obj",
+      "source_material": "Material-塑胶_073-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_5.obj",
+      "triangles": 2258
+    },
+    {
+      "source": "link3_rot_6.obj",
+      "source_material": "Material-塑胶_072-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_6.obj",
+      "triangles": 3646
+    },
+    {
+      "source": "link3_rot_7.obj",
+      "source_material": "Material-塑胶_071-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_7.obj",
+      "triangles": 2330
+    },
+    {
+      "source": "link3_rot_8.obj",
+      "source_material": "Material-塑胶_070-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_8.obj",
+      "triangles": 1702
+    },
+    {
+      "source": "link3_rot_9.obj",
+      "source_material": "Material-塑胶_069-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link3",
+      "visual_mesh": "meshes/visual/link3_rot_9.obj",
+      "triangles": 2328
+    },
+    {
+      "source": "link4_rot_0.obj",
+      "source_material": "Material-塑胶_039-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link4",
+      "visual_mesh": "meshes/visual/link4_rot_0.obj",
+      "triangles": 1712
+    },
+    {
+      "source": "link4_rot_1.obj",
+      "source_material": "Material-塑胶_038-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link4",
+      "visual_mesh": "meshes/visual/link4_rot_1.obj",
+      "triangles": 2322
+    },
+    {
+      "source": "link4_rot_2.obj",
+      "source_material": "Material-塑胶_037-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link4",
+      "visual_mesh": "meshes/visual/link4_rot_2.obj",
+      "triangles": 1928
+    },
+    {
+      "source": "link4_rot_3.obj",
+      "source_material": "Material-塑胶__1__014-material",
+      "rgba": [
+        0.141176,
+        0.141176,
+        0.141176,
+        1.0
+      ],
+      "link": "link4",
+      "visual_mesh": "meshes/visual/link4_rot_3.obj",
+      "triangles": 4002
+    },
+    {
+      "source": "link4_rot_4.obj",
+      "source_material": "Material-塑胶_036-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link4",
+      "visual_mesh": "meshes/visual/link4_rot_4.obj",
+      "triangles": 4644
+    },
+    {
+      "source": "link5_rot_0.obj",
+      "source_material": "Material-塑胶_044-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link5",
+      "visual_mesh": "meshes/visual/link5_rot_0.obj",
+      "triangles": 1702
+    },
+    {
+      "source": "link5_rot_1.obj",
+      "source_material": "Material-塑胶_043-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link5",
+      "visual_mesh": "meshes/visual/link5_rot_1.obj",
+      "triangles": 7016
+    },
+    {
+      "source": "link5_rot_2.obj",
+      "source_material": "a0000000-0000-0000-0000-000000000000_007-material",
+      "rgba": [
+        0.980392,
+        0.980392,
+        0.980392,
+        1.0
+      ],
+      "link": "link5",
+      "visual_mesh": "meshes/visual/link5_rot_2.obj",
+      "triangles": 4116
+    },
+    {
+      "source": "link5_rot_3.obj",
+      "source_material": "Material-塑胶_042-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link5",
+      "visual_mesh": "meshes/visual/link5_rot_3.obj",
+      "triangles": 1190
+    },
+    {
+      "source": "link5_rot_4.obj",
+      "source_material": "Material-塑胶__1__015-material",
+      "rgba": [
+        0.141176,
+        0.141176,
+        0.141176,
+        1.0
+      ],
+      "link": "link5",
+      "visual_mesh": "meshes/visual/link5_rot_4.obj",
+      "triangles": 5476
+    },
+    {
+      "source": "link5_rot_5.obj",
+      "source_material": "Material-塑胶_041-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link5",
+      "visual_mesh": "meshes/visual/link5_rot_5.obj",
+      "triangles": 1056
+    },
+    {
+      "source": "link5_rot_6.obj",
+      "source_material": "Material-塑胶_040-material",
+      "rgba": [
+        0.588235,
+        0.588235,
+        0.588235,
+        1.0
+      ],
+      "link": "link5",
+      "visual_mesh": "meshes/visual/link5_rot_6.obj",
+      "triangles": 2400
+    },
+    {
+      "source": "AgileX/link6.stl",
+      "link": "link6",
+      "visual_mesh": "meshes/visual/native_link6.stl",
+      "triangles": 1176,
+      "rgba": [
+        0.117647,
+        0.117647,
+        0.117647,
+        1.0
+      ]
+    },
+    {
+      "source": "AgileX/flange.stl",
+      "link": "flange_link",
+      "visual_mesh": "meshes/visual/native_flange.stl",
+      "triangles": 4090,
+      "rgba": [
+        0.117647,
+        0.117647,
+        0.117647,
+        1.0
+      ]
+    }
+  ],
+  "official_source": "https://github.com/agilexrobotics/agx_arm_urdf",
+  "official_commit": "f6642ce0d7872c686f29c99e9e10cd23d1d49313",
+  "appearance_colors": {
+    "supports_rgba": [
+      0.95,
+      0.95,
+      0.95,
+      1.0
+    ],
+    "fingers_rgba": [
+      1.0,
+      0.67,
+      0.3,
+      1.0
+    ],
+    "finger_color_description": "light apricot-yellow"
+  }
+}

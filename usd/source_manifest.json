@@ -1,0 +1,90 @@
+{
+  "source_step": "PIPER-UMI-GRIPPER.STEP",
+  "sha256": "b030b05dd137161ea7dbcec8ed051d909f9ff0e504a846df011592813c5b93e7",
+  "bytes": 63284781,
+  "official_commit": "f6642ce0d7872c686f29c99e9e10cd23d1d49313",
+  "official_urdf_sha256": "25b1c32ec37373b508ed322d32de5d01a58da14b0ad487a132ff8702f3bab8f7",
+  "cad_tessellation_deflection_mm": 0.15,
+  "geometry_units_in_step": "mm",
+  "output_units": "m",
+  "runtime_dependency_policy": "Each format folder is independent; USD asset embeds meshes/materials; no symlinks.",
+  "build_versions": {
+    "FreeCAD": "0.18.4",
+    "numpy": "1.26.0",
+    "scipy": "1.15.3",
+    "trimesh": "4.5.1",
+    "mujoco": "3.3.5",
+    "OpenUSD": "25.8",
+    "IsaacSim": "5.1.0.0"
+  },
+  "appearance_archive": {
+    "name": "piper_textured_meshes.zip",
+    "sha256": "1d1b27475e9d7f5ee7736310fdd743aa9a9680035018878e83341fb088566f25",
+    "arm_obj_files_used": 76,
+    "omitted": "link6_rot_0..8 contain a different stock gripper and camera accessories; preserve the supplied 155 mm rail/UMI mechanism instead."
+  },
+  "material_source": {
+    "source": "https://github.com/agilexrobotics/piper_ros/tree/noetic/src/piper_description/meshes/dae",
+    "archive_sha256": "1d1b27475e9d7f5ee7736310fdd743aa9a9680035018878e83341fb088566f25",
+    "material_source_files": {
+      "base_link.dae": "3c9a5f47db03dfbaa75fc2a98135bd5c7d0e3661c2a601b7372bd04e3cfdb689",
+      "link2.dae": "64e70cd8927b3f4d23f056f978e3f1004ca8d6f6a01843ef6a5e08075be2c6f3",
+      "link5.dae": "cb463d5e034adb780fea4a0b7d716d1b3b1de1535c728d747a3370bc347f95e2",
+      "link4.dae": "d74c2f686f8e42e0b71044afa29f2726cddfb346f4e2d92f8566489be5882a14",
+      "link1.dae": "2bb0e08b05a4de1a1c3f073c59dde29335ba3cec9a020e0a09735108c0420b28",
+      "link6.dae": "397e24f536d1f0827ab79adce41af87c016d5869098601284eefe8748510cda6",
+      "link3.dae": "c3f3f592868362852da55bdfc6fdbbfeef653bb8e226721dbdd448161f298d04"
+    }
+  },
+  "stock_parts": {
+    "link6": "88374973bc3bd9e7389b5853cd6e555af9731c30b658b1ee6f85be34a126cb92",
+    "flange": "f9ce752f93a6598858a779e3d8755a09e466b588efcffc3a1c3953773753a22b"
+  },
+  "mount_revision": {
+    "native_flange": "AgileX flange.stl",
+    "removed_cad_component": "UMI-PIPER-CAMERA-MOUNT",
+    "original_drive_origin_in_link6_m": [
+      -8.715347740843177e-05,
+      -3.482337671733421e-06,
+      0.0014874070214083712
+    ],
+    "new_drive_origin_in_link6_m": [
+      0,
+      0,
+      0.0045
+    ],
+    "eef_translation_in_link6_m": [
+      8.715347740843177e-05,
+      3.482337671733421e-06,
+      0.0030125929785916284
+    ],
+    "retained_rail_length_m": 0.155
+  },
+  "geometry_scope": "76 supplied arm OBJ visuals + stock link6 disk/flange + 8 retained custom CAD gripper visuals. Arm collision hulls retain the calibrated CAD approximation; native disk/flange collision hulls replace the custom versions.",
+  "appearance_colors": {
+    "supports_rgba": [
+      0.95,
+      0.95,
+      0.95,
+      1.0
+    ],
+    "fingers_rgba": [
+      1.0,
+      0.67,
+      0.3,
+      1.0
+    ],
+    "finger_color_description": "light apricot-yellow"
+  },
+  "preview_floor": {
+    "style": "MuJoCo-style blue checker",
+    "mujoco": "builtin checker texture in scene.xml",
+    "isaac": "local textures/blue_checker.png referenced by scene.usda"
+  },
+  "camera_alignment_reference": {
+    "source": "handle-umi-assemble.SLDASM",
+    "sha256": "f35264106187f92fd2c1de0c007f136bef49da3007719780f9b534636fa32b9e",
+    "direct_conversion": "Isaac Sim HOOPS CAD Converter 9.2.0",
+    "details": "camera_alignment.json"
+  }
+}
