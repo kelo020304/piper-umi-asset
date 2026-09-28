@@ -26,6 +26,17 @@
 
 <img src="usd/images/isaac_sim_gripper.png" alt="UMI 末端与相机支架" width="100%">
 
+## 3D 打印件
+
+共 **2 种零件、3 件**，文件与当前装配的 v2 版本一致。
+
+| 零件 | 数量 | 用途 | 文件 |
+| :-- | :--: | :-- | :-- |
+| UMI 手指支座（v2） | **2** | 左右各一件，同款打印两份，无需镜像 | [STL](urdf/printing/umi-piper-finger-sup-v2.stl) · [STEP](urdf/printing/umi-piper-finger-sup-v2.step) |
+| Piper 相机支架（v2） | **1** | 固定相机安装接口 | [STL](urdf/printing/piper-camera-base-v2.stl) · [STEP](urdf/printing/piper-camera-base-v2.step) |
+
+STL 单位为 **mm**，切片时按 **100%** 比例导入。软指使用现成或硅胶翻模件；link6 与安装法兰使用原生件。
+
 ## 支架偏差
 
 | CAD 比较基准 | 相机安装基准偏差 |
