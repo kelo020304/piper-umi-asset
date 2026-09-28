@@ -1,134 +1,109 @@
 {
-  "reference_definition": "Midpoint of the bolt hole axis through the central 3.2 mm camera-mount ear; hole diameter 5.38 mm. Finger root reference: inner-face/root-plane intersection at mid-thickness (canonical soft finger point [0,-12.9,0] mm).",
-  "alignment_definition": "Use handheld saved root-inner point spacing; match both root points and mean forward direction. +X is root pair axis, +Y is forward, +Z=X cross Y toward camera.",
-  "units": "millimetres and degrees",
-  "sources": {
-    "piper_step_sha256": "b030b05dd137161ea7dbcec8ed051d909f9ff0e504a846df011592813c5b93e7",
-    "handheld_sldasm_sha256": "f35264106187f92fd2c1de0c007f136bef49da3007719780f9b534636fa32b9e",
-    "handheld_converter": "Isaac Sim HOOPS CAD Converter 9.2.0, accurate tessellation, LOD4; 31 meshes; direct assembly transforms; no motion mate limits imported"
-  },
-  "known_geometry": {
-    "piper_saved_root_projected_spacing_mm": 66.80163462641444,
-    "umi_saved_root_spacing_mm": 64.74914181298865,
-    "piper_q0_root_projected_spacing_mm": 6.864026098277236,
-    "piper_qmax_root_projected_spacing_mm": 106.86402609827724,
-    "piper_qmax_root_point_spacing_mm": 106.86485144299448,
-    "piper_left_root_z_minus_right_mm": 0.42,
-    "piper_fork_tab_thicknesses_mm": [
-      2,
-      3.2,
-      2
+  "schema_version": 2,
+  "units": "mm and degrees",
+  "datum": "Diameter 5.38 mm mounting hole axis at the midplane of its central 3.2 mm ear.",
+  "shared_design_assembly": {
+    "source": "PIPER-UMI-GRIPPER.SLDASM, including hidden handle-umi-assemble component; original component transforms preserved",
+    "delta_piper_minus_handheld_mm": [
+      -0.00025276049022338043,
+      -0.2826241015398924,
+      -0.03000003874467881
     ],
-    "piper_fork_gaps_mm": [
-      5.4,
-      3.4
+    "distance_mm": 0.28421197895897893,
+    "hole_axis_angle_deg": 0.0005914852380012747,
+    "piper_datum_source_mm": [
+      28.306544917071665,
+      138.71140094941399,
+      144.39981678868787
     ],
-    "umi_fork_tab_thicknesses_mm": [
-      2,
-      3.2,
-      2
-    ],
-    "umi_fork_gaps_mm": [
-      3.4,
-      3.4
-    ],
-    "piper_fork_outer_span_mm": 16.0,
-    "umi_fork_outer_span_mm": 14.0,
-    "piper_camera_datum_in_rail_aligned_G_mm": [
-      19.520827921029934,
-      -39.729358590757485,
-      42.07999999999713
-    ],
-    "umi_camera_datum_in_rail_aligned_G_mm": [
-      16.972779045006448,
-      -39.3880519972132,
-      41.900000038743
-    ],
-    "rail_aligned_delta_mm": [
-      2.5480488760234863,
-      -0.3413065935442816,
-      0.17999996125412565
+    "handheld_datum_source_mm": [
+      28.30679767756189,
+      138.7659206438986,
+      144.12088312630698
     ]
   },
-  "assumptions": [
-    "Jaw-opening normalization uses equal/opposite rigid translations; no silicone deformation.",
-    "Preserves each saved assembly jaw midpoint; handheld mechanism stop limits were not exported.",
-    "Fork datum is mechanical, not an optical camera centre or calibrated camera extrinsic."
-  ],
-  "maximum_opening_status": "Not required: user requested equal opening and root alignment only.",
-  "matched_comparison": {
-    "matched_root_point_spacing_mm": 64.74914181298865,
-    "piper_projected_root_opening_mm": 64.7477796184434,
-    "piper_single_finger_q_m": 0.02894187676008308,
-    "piper_hinge_center_in_aligned_G_mm": [
-      19.24746227216259,
-      -39.729358590757485,
-      42.20573798435348
+  "equal_opening_root_reference": {
+    "definition": "Align stationary mechanism centre planes and mean finger direction; translate mean inner-root Y/Z to zero. Set both root X positions to +/- W/2 by individual jaw translations. Keep mechanism axes parallel, without tilting to fit a non-level root pair.",
+    "opening_mm": 64.74914181298865,
+    "axes": {
+      "X": "opening, left to right",
+      "Y": "toward fingertips",
+      "Z": "toward camera"
+    },
+    "delta_piper_minus_handheld_mm": [
+      0.0016700000005442917,
+      -0.3413065935442958,
+      0.17999996125398354
     ],
-    "umi_hinge_center_in_aligned_G_mm": [
-      16.972779045006448,
+    "distance_mm": 0.3858665128619593,
+    "hole_axis_angle_deg": 0.0,
+    "piper_datum_mm": [
+      19.765000000000548,
+      -39.7293585907575,
+      42.079999999996986
+    ],
+    "handheld_datum_mm": [
+      19.763330000000003,
       -39.3880519972132,
       41.900000038743
     ],
-    "delta_piper_minus_umi_mm": [
-      2.2746832271561424,
-      -0.3413065935442816,
-      0.3057379456104812
-    ],
-    "distance_mm": 2.3203770525689142,
-    "hinge_axis_angle_deg": 0.3716558316878392,
-    "piper_R_aligned_G_from_rail_frame": [
-      [
-        0.9999789619675705,
-        0.0,
-        -0.006486572458567291
+    "aligned_roots_mm": {
+      "piper": [
+        [
+          -32.37457090649433,
+          -2.842170943040401e-14,
+          0.21000000000226748
+        ],
+        [
+          32.37457090649433,
+          4.263256414560601e-14,
+          -0.2100000000022817
+        ]
       ],
-      [
-        0.0,
-        1.0,
-        0.0
-      ],
-      [
-        0.006486572458567291,
-        -0.0,
-        0.9999789619675705
+      "handheld": [
+        [
+          -32.37457090649433,
+          -3.6627911725872764e-07,
+          2.842170943040401e-14
+        ],
+        [
+          32.37457090649433,
+          3.66279124364155e-07,
+          0.0
+        ]
       ]
-    ]
-  },
-  "verification": {
-    "actual_export_fk_root_match_max_error_mm": 3.6627912436415526e-07,
-    "actual_export_fk_hinge_match_error_mm": 3.2791451027839687e-12,
-    "note": "Numerical consistency of nominal CAD alignment, not machining or calibration accuracy."
+    },
+    "jaw_x_translations_mm": {
+      "piper": [
+        0.7820739872455817,
+        -1.2704188261802045
+      ],
+      "handheld": [
+        -2.7905495578111896,
+        -2.7905495578111967
+      ]
+    },
+    "residual": "Piper root heights remain +0.21/-0.21 mm. Exact coincidence of both root points is incompatible with retaining parallel mechanism axes. Jaw recentering here is a CAD comparison, not a claimed pose reachable by the exported mimic controller."
   },
   "reproduction": {
-    "piper_qpos": [
-      0.0,
-      0.0004211567801626379,
-      -0.00047762092712426516,
-      0.0,
-      5.1091910728925484e-05,
-      0.0,
-      0.02894187676008308,
-      0.02894187676008308
-    ],
-    "T_shared_from_piper_base_m": [
+    "T_common_from_piper_source_mm": [
       [
-        0.0005653768238376456,
-        -0.9999789619675701,
-        -0.006461886048842006,
-        0.0011024877492426257
+        1.0,
+        0.0,
+        0.0,
+        -8.541544917071116
       ],
       [
-        0.9961942289317539,
-        1.2719478212020586e-15,
-        0.08716110510467566,
-        -0.1689250819626758
+        -0.0,
+        0.08716110510467565,
+        -0.9961942289317539,
+        92.03066655556727
       ],
       [
-        -0.08715927140651984,
-        -0.006486572458637281,
-        0.9961732709652592,
-        -0.20760315757872705
+        0.0,
+        0.9961942289317538,
+        0.08716110510467565,
+        -108.68954472106255
       ],
       [
         0.0,
@@ -137,24 +112,24 @@
         1.0
       ]
     ],
-    "T_shared_from_handheld_source_m": [
+    "T_common_from_handheld_source_mm": [
       [
         1.0,
         0.0,
         0.0,
-        -0.004646731605628316
+        -1.8561820478171231
       ],
       [
         0.0,
         1.0,
         1.1103698195005484e-16,
-        -0.053682476382100865
+        -53.682476382100866
       ],
       [
         0.0,
         -1.1103698195005484e-16,
         1.0,
-        -0.162949999961257
+        -162.949999961257
       ],
       [
         0.0,
@@ -163,6 +138,78 @@
         1.0
       ]
     ],
-    "transform_convention": "Column vectors, p_shared_m = T @ p_source_m; source USD handheld points must first be converted from stage units (mm) to metres."
+    "T_handheld_topcover_in_shared_assembly_mm": [
+      [
+        -1.0323339388144693e-05,
+        0.9999999999467141,
+        6.838295829383803e-14,
+        -77.45622810151572
+      ],
+      [
+        -0.08716110510003094,
+        -8.997937375530885e-07,
+        0.9961942289317541,
+        119.31864693593907
+      ],
+      [
+        0.9961942288786707,
+        1.0284051115698351e-05,
+        0.08716110510467535,
+        112.83699611738717
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "handheld_datum_local_mm": [
+      29.46869,
+      105.76333,
+      22.1
+    ],
+    "piper_datum_local_mm": [
+      -19.765000000000008,
+      3.590000000000023,
+      -4.0820484795492575
+    ],
+    "matrix_convention": "Column vectors, translations in mm"
+  },
+  "geometry": {
+    "piper_ear_gaps_mm": [
+      5.4,
+      3.4
+    ],
+    "handheld_ear_gaps_mm": [
+      3.4,
+      3.4
+    ]
+  },
+  "verification": {
+    "native_sw_hole_vertex_axial_levels_from_central_ear_mm": {
+      "piper": [
+        -7.0,
+        -5.0,
+        -1.6,
+        1.6,
+        7.0,
+        9.0
+      ],
+      "handheld": [
+        -7.0,
+        -5.0,
+        -1.6,
+        1.6,
+        5.0,
+        7.0
+      ]
+    }
+  },
+  "supersedes": "Previous 2.320 mm / 0.372 degree result used saved jaw midpoints as mechanism centres and tilted the assembly to fit both roots. It is not the centreline-aligned design offset.",
+  "scope": "Nominal mechanical CAD alignment; not optical camera calibration.",
+  "sources": {
+    "PIPER-UMI-GRIPPER.SLDASM": "4618e28cac258091c7493192a5cff29e9877c91f0d1978567b28f45bb64b644a",
+    "handle-umi-assemble.SLDASM": "f35264106187f92fd2c1de0c007f136bef49da3007719780f9b534636fa32b9e"
   }
 }

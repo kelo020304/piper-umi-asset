@@ -85,6 +85,11 @@
     "source": "handle-umi-assemble.SLDASM",
     "sha256": "f35264106187f92fd2c1de0c007f136bef49da3007719780f9b534636fa32b9e",
     "direct_conversion": "Isaac Sim HOOPS CAD Converter 9.2.0",
-    "details": "camera_alignment.json"
+    "details": "camera_alignment.json",
+    "shared_design_assembly": {
+      "source": "PIPER-UMI-GRIPPER.SLDASM",
+      "sha256": "4618e28cac258091c7493192a5cff29e9877c91f0d1978567b28f45bb64b644a",
+      "includes_hidden_handheld_reference": true
+    }
   }
 }
